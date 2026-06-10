@@ -92,6 +92,7 @@ async def handle_document(message: Message, state: FSMContext) -> None:
 
     await state.set_state(UploadStates.waiting_for_entry_choice)
     await state.update_data(file_path=str(input_path), job_dir=str(job_dir), file_name=file_name)
+    await message.answer("Файл получен. Загружаю и обрабатываю данные...")
     await _send_umap_preview(message, state, input_path, job_dir, file_name)
     await message.answer("Файл получен. Что сделать с данными?", reply_markup=analysis_entry_keyboard())
 
