@@ -1,0 +1,15 @@
+.venv/
+.venv*/
+.tmp/
+__pycache__/
+*.py[cod]
+temp/
+outputs/
+images/
+*.pdf
+*.png
+*.sqlite3
+.dashboard_tmp/
+.tmp_verify/
+.pytest_cache/
+pytest-cache-files-*/
