@@ -1,15 +1,28 @@
+# Virtual environments and local secrets
 .venv/
 .venv*/
-.tmp/
+.env
+.env.*
+!.env.example
+
+# Python and test caches
 __pycache__/
 *.py[cod]
-temp/
-outputs/
-images/
-*.pdf
-*.png
-*.sqlite3
-.dashboard_tmp/
-.tmp_verify/
 .pytest_cache/
 pytest-cache-files-*/
+.coverage
+htmlcov/
+
+# Runtime data
+temp/
+images/
+outputs/
+*.sqlite3
+*.pdf
+*.png
+
+# Local tooling
+.tmp/
+.dashboard_tmp/
+.tmp_verify/
+.pytest_tmp/
